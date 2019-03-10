@@ -1,0 +1,59 @@
+
+Description
+============
+
+Jquiz, is a small flash-card application for learning Japanese vocabulary.
+Jquiz has two modes: practice and quiz.
+
+In practice mode, you can select a group of words from your list and train until master them.
+You can choose what you want to learn (hiragana, meaning or kanji).
+Practice mode also allows you to know the pronunciation of the word.
+
+In quiz mode, the program gives you a word and you should write it in kanji.
+Quiz mode has a handwriting area to write the response by using a pen mouse.
+The handwriting implementation is based on Wagomu (http://www.tegaki.org).
+
+
+How to use
+============
+Jquiz requires a file in the following format:
+
+<Word in Kanji><TAB><Meaning of the word><TAB><Word in hiragana> (separated by tabs) 
+<Word2 in Kanji><TAB><Meaning of the word2><TAB><Word2 in hiragana>
+<Word3 in Kanji><TAB><Meaning of the word2><TAB><Word3 in hiragana>
+
+I provide several list for mastering the N2 exam vocabulary.
+You can create you own list or use my scrips in ruby to extract vocabulary from Internet.
+
+
+Installing
+===========
+Jquiz is implemented in C and uses GTK libraries for the UI.
+It has been tested in Linux. 
+Since I do not use any Linux library, I guess that It can work in any other platform.
+
+Dependencies:
+Install the following libraries (development packages):
+
+gtk+-2.0 >= 2.12.0
+gthread-2.0
+sqlite3
+gstreamer-0.10
+
+
+
+
+Run:
+
+cd src
+
+./configure
+
+make install
+
+
+
+
+
+
+
